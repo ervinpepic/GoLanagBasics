@@ -21,6 +21,9 @@ func main() {
 	car_c.getMpg()
 	fmt.Println(car_c)
 
+	car_default := newCar()
+	fmt.Println("Car with newFunction default values", car_default)
+
 }
 
 type vehicle struct {
@@ -46,3 +49,13 @@ const (
 	red   Color = "red"
 	black Color = "black"
 )
+
+//default value initialization (this function let us create deafulte values for our CAR struct,
+//we just need to call this function) no need to initialize the whole new struct
+func newCar() *car {
+	result := car{}
+	result.mpg = 20
+	result.numberOfDors = 4
+	result.color = black
+	return &result
+}
