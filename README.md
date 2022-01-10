@@ -19,4 +19,6 @@
 ### 15. Interfaces
 ### 16. Composition
 ### 17. Custom Types
-#### Continue....
+### 18. New Function
+### 19. Polymorphic
+### 20. Multifile
